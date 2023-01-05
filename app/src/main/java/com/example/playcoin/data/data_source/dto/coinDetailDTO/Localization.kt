@@ -1,5 +1,7 @@
 package com.example.playcoin.data.data_source.dto.coinDetailDTO
 
+import com.google.gson.annotations.SerializedName
+
 data class Localization(
     val ar: String,
     val bg: String,
@@ -16,6 +18,7 @@ data class Localization(
     val hr: String,
     val hu: String,
     val id: String,
+    @SerializedName("`it`")
     val it: String,
     val ja: String,
     val ko: String,
@@ -34,5 +37,6 @@ data class Localization(
     val uk: String,
     val vi: String,
     val zh: String,
+    @SerializedName("zh-tw")
     val zh_tw: String
 )

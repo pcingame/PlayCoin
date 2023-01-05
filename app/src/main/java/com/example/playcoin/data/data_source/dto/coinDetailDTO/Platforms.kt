@@ -1,5 +1,8 @@
 package com.example.playcoin.data.data_source.dto.coinDetailDTO
 
+import com.google.gson.annotations.SerializedName
+
 data class Platforms(
-    val p : String
+    @SerializedName("")
+    val a : String
 )

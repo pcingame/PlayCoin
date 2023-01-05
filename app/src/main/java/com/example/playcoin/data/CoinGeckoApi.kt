@@ -1,7 +1,7 @@
-package com.example.playcoin.data.data_source
+package com.example.playcoin.data
 
-import com.example.playcoin.data.data_source.dto.coinDetailDTO.CoinDetailDTO
 import com.example.playcoin.data.data_source.dto.coinListDTO.CoinListDTO
+import com.example.playcoin.data.data_source.dto.coinDetailDTO.CoinDetailDTO
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

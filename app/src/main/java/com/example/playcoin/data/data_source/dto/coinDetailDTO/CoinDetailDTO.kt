@@ -5,15 +5,14 @@ import com.example.playcoin.domain.model.CoinDetail
 data class CoinDetailDTO(
     val additional_notices: List<Any>,
     val asset_platform_id: Any,
-    val block_time_in_minutes: Int,
+    val block_time_in_minutes: Double,
     val categories: List<String>,
-    val coingecko_rank: Int,
+    val coingecko_rank: Double,
     val coingecko_score: Double,
     val community_data: CommunityData,
     val community_score: Double,
     val country_origin: String,
     val description: Description,
-    val detail_platforms: DetailPlatforms,
     val developer_data: DeveloperData,
     val developer_score: Double,
     val genesis_date: String,
@@ -24,7 +23,7 @@ data class CoinDetailDTO(
     val links: Links,
     val liquidity_score: Double,
     val localization: Localization,
-    val market_cap_rank: Int,
+    val market_cap_rank: Double,
     val market_data: MarketData,
     val name: String,
     val platforms: Platforms,
@@ -39,14 +38,14 @@ data class CoinDetailDTO(
 ) {
     fun toCoinDetail(): CoinDetail {
         return CoinDetail(
-            name = name,
             image = image.large,
-            market_cap = market_data.market_cap.usd,
+            name = name,
             price = market_data.current_price.usd,
             price_percentage_change = market_data.price_change_percentage_24h_in_currency.usd,
             low_price = market_data.low_24h.usd,
             high_price = market_data.high_24h.usd,
-            description = description.en
+            description = description.en,
+            market_cap = market_data.market_cap.usd
         )
     }
 }

@@ -1,6 +1,6 @@
 package com.example.playcoin.data.data_source.dto.coinDetailDTO
 
-data class MarketCapChange24hInCurrency(
+data class PriceChangePercentage60dInCurrency(
     val aed: Double,
     val ars: Double,
     val aud: Double,
