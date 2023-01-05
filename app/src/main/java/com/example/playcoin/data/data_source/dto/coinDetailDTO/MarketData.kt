@@ -1,7 +1,5 @@
 package com.example.playcoin.data.data_source.dto.coinDetailDTO
 
-import com.example.relevelandroidproject.data.data_source.dto.CoinDetailDTO.*
-
 data class MarketData(
     val ath: Ath,
     val ath_change_percentage: AthChangePercentage,

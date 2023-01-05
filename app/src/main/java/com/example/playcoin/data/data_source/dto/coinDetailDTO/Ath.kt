@@ -53,7 +53,7 @@ data class Ath(
     val twd: Double,
     val uah: Double,
     val usd: Double,
-    val vef: Long,
+    val vef: Double,
     val vnd: Double,
     val xag: Double,
     val xau: Double,
