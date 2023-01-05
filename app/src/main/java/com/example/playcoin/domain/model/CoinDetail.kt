@@ -10,3 +10,4 @@ data class CoinDetail(
     val high_price: Double,
     val description: String
 )
+

@@ -1,19 +1,19 @@
 package com.example.playcoin.data.repository
 
-import com.example.playcoin.data.data_source.CoinGeckoApi
-import com.example.playcoin.data.data_source.dto.CoinDetailDTO.CoinDetailDTO
-import com.example.playcoin.data.data_source.dto.CoinListDTO.CoinListDTO
+import com.example.playcoin.data.CoinGeckoApi
+import com.example.playcoin.data.data_source.dto.coinListDTO.CoinListDTO
 import com.example.playcoin.domain.repository.CoinRepository
+import com.example.playcoin.data.data_source.dto.coinDetailDTO.CoinDetailDTO
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
-    private val coinApi: CoinGeckoApi
+    private val api: CoinGeckoApi
 ) : CoinRepository {
     override suspend fun getAllCoin(page: String): CoinListDTO {
-        return coinApi.getAllCoins(page = page)
+        return api.getAllCoins(page = page)
     }
 
     override suspend fun getCoinById(id: String): CoinDetailDTO {
-        return coinApi.getCoinById(id = id)
+        return api.getCoinById(id = id)
     }
 }

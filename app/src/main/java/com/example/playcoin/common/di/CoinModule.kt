@@ -1,7 +1,7 @@
 package com.example.playcoin.common.di
 
 import com.example.playcoin.common.Constant.BASE_URL
-import com.example.playcoin.data.data_source.CoinGeckoApi
+import com.example.playcoin.data.CoinGeckoApi
 import com.example.playcoin.data.repository.CoinRepositoryImpl
 import com.example.playcoin.domain.repository.CoinRepository
 import dagger.Module
